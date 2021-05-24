@@ -1,0 +1,19 @@
+.Navbar{
+    width: 100%;
+    position: fixed;
+    background: var(--bg-glass);
+    backdrop-filter: var(--blur-effect);
+    padding: 1rem 0;
+    color: var(--color-title);
+    display: flex;
+    justify-content: center;
+}
+
+.Navbar__item{
+    margin-left: 15px;
+    margin-right: 15px;
+    min-width: 30px;
+    text-align: center;
+    font-family: 'Quicksand-Bold';
+    cursor: pointer;
+}

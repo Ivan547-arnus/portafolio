@@ -1,0 +1,26 @@
+.Profile__container{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: relative;
+    z-index: -1;
+    display: grid;
+    overflow-x: hidden;
+}
+
+.Profile__bg{
+    margin-left: 35%;
+    position: absolute;
+    height: 100vh;
+}
+
+.Profile__ellipse{
+    position: absolute;
+    height: 100%;
+    width: auto;
+}
+.Profile__balls{
+    position: absolute;
+    height: 100%;
+    width: auto;
+}
