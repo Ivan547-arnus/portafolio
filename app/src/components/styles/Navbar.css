@@ -17,3 +17,18 @@
     font-family: 'Quicksand-Bold';
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .Navbar{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        background: linear-gradient(267.83deg, #6A5085 0%, #505485 100%);
+        border-radius: 20px 20px 0px 0px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+}

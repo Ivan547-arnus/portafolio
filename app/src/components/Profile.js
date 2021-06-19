@@ -1,16 +1,15 @@
 import React from 'react'
 import './styles/Profile.css'
-import Bg from '../images/bg.svg'
-import Balls from '../images/balls.svg'
+import "../styles/index.css"
 
-function Profile(){
+function Profile(props){
     return(
-        <div className="Profile__container">
+        <div className="container bg Profile__container">
             <div className="Profile__bg">
-                <img className="Profile__ellipse" src={Bg} alt="fondo" />
-                <img className="Profile__balls" src={Balls} alt="Balls acompañando el fondo" />
+                <div className="Profile__user">
+                
+                </div>
             </div>
-            Hello bro ya soy un componente hecho y derecho
         </div>
     )
 }
