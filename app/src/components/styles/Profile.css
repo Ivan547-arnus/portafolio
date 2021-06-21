@@ -6,13 +6,9 @@
     z-index: -1;
     display: grid;
     overflow-x: hidden;
+    
 }
 
-.Profile__bg{
-    margin-left: 35%;
-    position: absolute;
-    height: 100vh;
-}
 
 .Profile__ellipse{
     position: absolute;
@@ -27,15 +23,67 @@
 
 
 @media only screen and (max-width: 600px) {
-    .Profile__bg{
-        grid-column: 2/10;
-        grid-row: auto;
+    .Profile__container{
+        grid-auto-rows: minmax(100px, 90vh);
+        grid-template-rows: repeat(5,1fr);
     }
 
-    .Profile__user{
+    .Profile__ellipse{
+        position: relative;
+        margin-top: 5rem;
+        grid-column: 4/10;
+        grid-row: 1;
+        justify-self: center;
         width: 256px;
         height: 256px;
         border-radius: 50%;
-        background: white;
+        background: transparent;
+        border:  solid 5px var(--primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Profile__user{
+        position: relative;
+        border-radius: 50%;
+        width: 95%;
+        height: auto;
+    }
+    .Profile__info{
+        position: relative;
+        grid-row: 2;
+        text-align: center;
+        grid-column: 4/10;
+        color: var(--secondary);
+    }
+
+    
+    .Profile__social_networks{
+        position: relative;
+        grid-row: 3;
+        text-align: center;
+        grid-column: 4/10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+    }
+
+    .Profile__social_networks .border{
+        position: relative;
+        margin:10px;
+        border-radius: 50px;
+        border: solid 2px var(--secondary);
+        height: 32px;
+        width: 32px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    .Profile__social_networks .border .icon{
+        position: relative;
+        height:70%;
+        width: 70%;
     }
 }
