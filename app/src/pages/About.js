@@ -1,9 +1,9 @@
 import React, {useState, useEffect } from 'react'
-import Profile from '../components/Profile'
 import Loader from '../components/Loader'
-import Arvispace from '../components/Arvispace'
+import Skills from '../components/Skills'
 
-const Home = (props) => {
+
+const About = ()=> {
     
     const [Loading, setLoading] = useState(true)
     
@@ -15,16 +15,16 @@ const Home = (props) => {
     {
         return(
             <React.Fragment>
-                <Loader label="Cargando..."/>
+                <Loader label="cargando..."/>
             </React.Fragment>
         )
     }
+
     return(
         <React.Fragment>
-            <Profile />
-            <Arvispace />
+            <Skills />
         </React.Fragment>
     )
 }
 
-export default Home
+export default About

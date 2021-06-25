@@ -6,7 +6,7 @@ import Instagram from "../images/icons/instagram.png"
 import Linkedin from "../images/icons/linkedin.png"
 import Github from "../images/icons/github.png"
 
-function Profile(props){
+const Profile = (props) => {
     return(
         <div className="container bg Profile__container">
             <div className="Profile__ellipse">
@@ -21,13 +21,19 @@ function Profile(props){
             </div>
             <div className="Profile__social_networks">
                 <div className="border">
-                    <img src={Instagram} className="icon" alt="Instagram icon"/>
+                    <a href="https://www.instagram.com/ivan.villegas547/?hl=es-la">
+                        <img src={Instagram} className="icon" alt="Instagram icon"/>
+                    </a>
                 </div>
                 <div className="border">
-                    <img src={Linkedin} className="icon" alt="Linked in icon"/>
+                    <a href="https://github.com/Ivan547-arnus">
+                        <img src={Linkedin} className="icon" alt="Linked in icon"/>
+                    </a>
                 </div>
                 <div className="border">
-                    <img src={Github}  className="icon" alt="Github icon"/>
+                    <a href="https://github.com/Ivan547-arnus">
+                        <img src={Github}  className="icon" alt="Github icon"/>
+                    </a>
                 </div>
             </div>
         </div>

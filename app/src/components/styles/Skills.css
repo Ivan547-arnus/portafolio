@@ -1,0 +1,28 @@
+@media only screen and (max-width:600px) {
+    .Skills__pixelimage{
+        position: fixed;
+        height: 320px;
+        width: auto;
+        transform: rotatez(90deg);
+        top: 30px;
+        left: 200px;
+    }
+
+    .Skills__container{
+        grid-column: 2/11;
+        margin-top: 50px;
+        z-index: 5;
+    }    
+
+    .Skills__title{
+        text-align: left;
+        margin: 0;
+    }
+    .Skills__subtitle{
+        margin:0;
+        padding: 0;
+    }
+    .Skills__description{
+        margin-top: 30px;
+    }
+}

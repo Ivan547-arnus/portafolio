@@ -9,6 +9,7 @@
 
 h1{
     font-family: 'Quicksand-Bold';
+    color: var(--secondary);
 }
 h2{
 
@@ -17,6 +18,10 @@ h2{
 
 body{
     background: var(--primary);
+}
+
+.root{
+    z-index: -1;
 }
 
 @font-face {

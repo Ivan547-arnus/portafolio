@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 
-function Layout(props){
+const Layout = (props) => {
     return(
         <React.Fragment>
             <React.Fragment>

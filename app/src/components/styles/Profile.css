@@ -24,7 +24,6 @@
 
 @media only screen and (max-width: 600px) {
     .Profile__container{
-        grid-auto-rows: minmax(100px, 90vh);
         grid-template-rows: repeat(5,1fr);
     }
 
@@ -61,6 +60,7 @@
     
     .Profile__social_networks{
         position: relative;
+        margin-top: 15px;
         grid-row: 3;
         text-align: center;
         grid-column: 4/10;
@@ -81,9 +81,15 @@
         justify-items: center;
         align-items: center;
     }
-    .Profile__social_networks .border .icon{
+    .Profile__social_networks .border a{
         position: relative;
         height:70%;
         width: 70%;
+    }
+
+    .Profile__social_networks .border .icon{
+        position: relative;
+        height:100%;
+        width: 100%;
     }
 }
