@@ -16,6 +16,15 @@ h2{
     font-family: 'Quicksand-Regular';
 }
 
+p{
+    
+    font-family: 'Quicksand-Regular';
+}
+
+.quicksand{
+    font-family: 'Quicksand-Regular';
+}
+
 body{
     background: var(--primary);
 }

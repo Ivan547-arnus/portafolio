@@ -1,7 +1,6 @@
 import React, {useState, useEffect } from 'react'
 import Profile from '../components/Profile'
 import Loader from '../components/Loader'
-import Arvispace from '../components/Arvispace'
 
 const Home = (props) => {
     
@@ -22,7 +21,6 @@ const Home = (props) => {
     return(
         <React.Fragment>
             <Profile />
-            <Arvispace />
         </React.Fragment>
     )
 }

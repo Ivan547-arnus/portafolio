@@ -4,7 +4,7 @@
 }
 
 @media only screen and (max-width:800px){
-    .Arvispace__pixelimage{
+    .SportCloset__pixelimage{
         position: fixed;
         height: 320px;
         width: auto;
@@ -12,73 +12,50 @@
         top: 30px;
         left: 225px;
     }
-    .Arvispace__pixelimage-left{
-        position: fixed;
-        height: 320px;
-        width: auto;
-        transform: rotatez(270deg);
-        bottom: 30px;
-        right: 235px;
-    }
+
 
     .Arvipace__container{
         grid-column: 2/12;
         margin-top: 50px;
         z-index: 5;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
     }
 
-    .Arvispace__header{
+    .SportCloset__header{
         display: grid;
         grid-template: "img titles";
         grid-gap: 15px;
         grid-template-rows: auto;
     }
-    .Arvispace__logo{
+    .SportCloset__logo{
         grid-area:img;
         width: 120px;
         height: auto;
         border-radius:25px;
         box-shadow: 3px 6px 6px #505485;
     }
-    .Arvispace__titles{
+    .SportCloset__titles{
         grid-area: titles;
         margin-top: 50px;
     }
-    .Arvispace__title{
+    .SportCloset__title{
         margin:0;
         padding: 0;
     }
-    .Arvispace__subtitle{
+    .SportCloset__subtitle{
         margin:0;
         padding: 0;
         color: #505485;
         font-size: 15px;
     }
-    .Arvispace__content{
+    .SportCloset__content{
         padding: 20px;
     }
 
-    .Arvispace__description{
+    .SportCloset__description{
         margin-top: 30px;
     }
-    .Arvispace__footer{
-        display: grid;
-        grid-template: "a b "
-                        "c c";
-        grid-gap: 1px;
-        grid-template-rows: auto;
-    }
-    .Arvispace__footer img{
-        width: 100%;
-        height: auto;
-    }
-    .Arvipace__playstore{
-        grid-area: a;
-    }.Arvipace__appstore{
-        grid-area: b;
-    }
-    .Arvipace__oracle{
-        grid-area: c;
+    .SportCloset__footer{
+        text-align: center;
     }
 }

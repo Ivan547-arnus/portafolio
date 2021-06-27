@@ -1,10 +1,11 @@
-import React, {useState, useEffect } from 'react'
+import React, {useState, useEffect} from 'react'
 import Loader from '../components/Loader'
-import Skills from '../components/Skills'
+import Arvispace from '../components/Arvispace'
+import Arvis from '../components/Arvis'
+import SportCloset from '../components/SportCloset'
 
 
-const About = ()=> {
-    
+const Projects = (props) => {
     const [Loading, setLoading] = useState(true)
     
     useEffect(() => {
@@ -19,12 +20,12 @@ const About = ()=> {
             </React.Fragment>
         )
     }
-
     return(
-        <React.Fragment>
-            <Skills />
+        <React.Fragment>    
+            <Arvispace />
+            <Arvis />
+            <SportCloset />
         </React.Fragment>
     )
 }
-
-export default About
+export default Projects

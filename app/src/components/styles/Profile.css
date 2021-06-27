@@ -1,12 +1,12 @@
 .Profile__container{
     width: 100%;
     height: 100vh;
-    top: 0;
     position: relative;
     z-index: -1;
     display: grid;
     overflow-x: hidden;
-    
+    justify-items: center;
+    align-items: center;
 }
 
 
@@ -21,8 +21,82 @@
     width: auto;
 }
 
+.Profile__container{
+    grid-template-rows: repeat(5,1fr);
+}
 
-@media only screen and (max-width: 600px) {
+.Profile__ellipse{
+    position: relative;
+    margin-top: 7.5rem;
+    grid-column: 4/10;
+    grid-row: 1;
+    justify-self: center;
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    background: transparent;
+    border:  solid 5px var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile__user{
+    position: relative;
+    border-radius: 50%;
+    width: 95%;
+    height: auto;
+}
+.Profile__info{
+    position: relative;
+    grid-row: 2;
+    text-align: center;
+    grid-column: 4/10;
+    color: #fff;
+}
+
+.Profile__info h1{
+    color: #fff;
+}
+
+
+.Profile__social_networks{
+    display: none;
+    position: relative;
+    margin-top: 15px;
+    grid-row: 3;
+    text-align: center;
+    grid-column: 4/10;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.Profile__social_networks .border{
+    position: relative;
+    margin:10px;
+    border-radius: 50px;
+    border: solid 2px #fff;
+    height: 32px;
+    width: 32px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.Profile__social_networks .border a{
+    position: relative;
+    height:70%;
+    width: 70%;
+}
+
+.Profile__social_networks .border .icon{
+    position: relative;
+    height:100%;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 800px) {
     .Profile__container{
         grid-template-rows: repeat(5,1fr);
     }
